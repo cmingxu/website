@@ -12,7 +12,7 @@ export function Header() {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <Send className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold">TMA.dev Builder</span>
+              <span className="text-xl font-bold">Telegram Mini App Builder</span>
             </Link>
             <div className="hidden md:flex items-center gap-6">
               <a href="#" className="text-sm font-medium text-foreground hover:text-blue-600 transition-colors">
