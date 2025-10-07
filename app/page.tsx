@@ -4,7 +4,10 @@ import { Check, Code2, Zap, Users, Globe, Sparkles, Send, MessageCircle, Rocket,
 import Script from "next/script"
 import Link from "next/link"
 import { LogoLoop } from "@/components/LogoLoop"
-  
+import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer"
+import { Squares } from "@/components/effects/Squares"
+
   export default function Home() {
   const baseUrl = "https://telegram-mini-app.dev";
   const orgJsonLd = {
@@ -39,46 +42,13 @@ import { LogoLoop } from "@/components/LogoLoop"
       <Script id="jsonld-organization" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
       <Script id="jsonld-webapp" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd) }} />
       {/* Navigation */}
-      <nav className="border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-8">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <Send className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">TMA.dev Builder</span>
-              </div>
-              <div className="hidden md:flex items-center gap-6">
-                <a href="#" className="text-sm font-medium text-foreground hover:text-blue-600 transition-colors">
-                  Product
-                </a>
-                <a href="#" className="text-sm font-medium text-foreground hover:text-blue-600 transition-colors">
-                  Solutions
-                </a>
-                <a href="#" className="text-sm font-medium text-foreground hover:text-blue-600 transition-colors">
-                  Resources
-                </a>
-                <a href="#" className="text-sm font-medium text-foreground hover:text-blue-600 transition-colors">
-                  Pricing
-                </a>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <Button asChild variant="ghost" className="text-sm font-medium">
-                <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer">Log in</Link>
-              </Button>
-              <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium">
-                <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer">Start building</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+      <Header />
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Squares direction="diagonal" speed={0.6} borderColor="#dbeafe" squareSize={40} />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 dark:bg-blue-950 rounded-full border border-blue-200 dark:border-blue-800">
@@ -86,18 +56,16 @@ import { LogoLoop } from "@/components/LogoLoop"
                 <span className="text-sm font-medium text-blue-600">AI‑powered Telegram Mini App builder</span>
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-balance">
-                Build your own telegram mini app without code
+                Build your own Telegram Mini App without code
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
                 Visually drag & drop components and generate your Telegram Mini App. Import products and content from Shopify with a single click.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-base font-medium px-8">
-                  <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer">Get started free</Link>
+                <Button asChild size="lg" className="h-12 px-8 text-lg font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl shadow-blue-300/30 ring-2 ring-blue-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-blue-400/40 transform hover:scale-[1.02]">
+                  <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer"><Rocket className="w-5 h-5" /> Start building</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base font-medium px-8 bg-transparent">
-                  Watch demo
-                </Button>
+
               </div>
               <div className="flex items-center gap-8 pt-4">
                 <div className="flex items-center gap-2">
@@ -239,9 +207,9 @@ import { LogoLoop } from "@/components/LogoLoop"
             Join another 2000 builders creating your own Telegram Mini App
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-blue-600 text-base font-medium px-8">
-              <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer">Get started free</Link>
-            </Button>
+            <Button asChild size="lg" className="h-12 px-8 text-lg font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl shadow-blue-300/30 ring-2 ring-blue-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-blue-400/40 transform hover:scale-[1.02]">
+                  <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer"><Rocket className="w-5 h-5" /> Start building</Link>
+                </Button>
             <Button
               size="lg"
               variant="outline"
@@ -253,100 +221,7 @@ import { LogoLoop } from "@/components/LogoLoop"
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-muted/50 py-12 border-t border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <Send className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">TMA.dev Builder</span>
-              </div>
-              <p className="text-sm text-muted-foreground">Build powerful apps without code</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Features
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Templates
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Plugins
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Documentation
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Tutorials
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Community
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Blog
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Legal
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            <p>© 2025 TMA.dev Builder. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
