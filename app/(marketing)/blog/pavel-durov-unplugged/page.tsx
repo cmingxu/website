@@ -1,3 +1,4 @@
+import Image from "next/image"
 export const metadata = {
   title: "Pavel Durov’s Insights",
   description:
@@ -10,7 +11,7 @@ export default function PavelDurovUnplugged() {
       <h1>{`Pavel Durov’s Insights`}</h1>
       <div className="not-prose text-sm text-muted-foreground mb-6">{`2025-10-07 · 8 min read`}</div>
       <figure className="not-prose mb-8">
-        <img src="/pavel-durov.webp" alt="Pavel Durov" className="w-full rounded-xl shadow-lg" />
+        <Image src="/pavel-durov.webp" alt="Pavel Durov" width={1200} height={630} className="w-full rounded-xl shadow-lg" />
       </figure>
       <p>{`A distilled set of takeaways from Pavel Durov’s conversation with Lex Fridman (#482)—covering Telegram’s evolution, Mini Apps, TON, and a disciplined way of life centered on freedom and focus.`}</p>
       <p>{`These insights highlight what makes Telegram private and resilient, how Mini Apps turn chats into utility at global scale, why TON powers a fast, user-owned economy, and the habits that fuel Durov’s long-term clarity and independence.`}</p>

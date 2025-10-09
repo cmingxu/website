@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export const metadata = {
   title: "Telegram Community and Mini Apps: A Comprehensive Guide",
@@ -12,7 +13,7 @@ export default function TelegramMiniAppGuide() {
       <h1>Telegram Community and Mini Apps: A Comprehensive Guide</h1>
       <div className="not-prose text-sm text-muted-foreground mb-6">{`2025-10-07 · 6 min read`}</div>
       <figure className="not-prose mb-8">
-        <img src="/telegram-app.png" alt="Telegram Mini App" className="w-full rounded-xl shadow-lg" />
+        <Image src="/telegram-app.png" alt="Telegram Mini App" width={1200} height={630} className="w-full rounded-xl shadow-lg" />
       </figure>
       <p>
         This guide walks you through Telegram’s vibrant ecosystem, explains what Telegram Mini Apps are and why they

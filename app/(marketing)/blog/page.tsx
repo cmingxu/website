@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Card } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function BlogIndex() {
   const posts = [
@@ -35,10 +36,13 @@ export default function BlogIndex() {
         {posts.map((post) => (
           <Card key={post.slug} className="p-6 hover:shadow-lg transition-shadow">
             <Link href={`/blog/${post.slug}`} className="block mb-4 overflow-hidden rounded-lg">
-              <img
+              <Image
                 src={post.image}
                 alt={post.imageAlt}
+                width={800}
+                height={400}
                 className="w-full h-40 object-cover rounded-lg"
+                sizes="(min-width: 768px) 50vw, 100vw"
               />
             </Link>
             <h2 className="text-2xl font-semibold mb-2">
