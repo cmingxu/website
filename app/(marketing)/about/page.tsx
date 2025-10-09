@@ -39,9 +39,9 @@ export default function AboutPage() {
         {`.`}
       </p>
       <p>
-        {`Prefer Telegram? Reach out directly: `}
-        <a href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-          @victoleon1979
+        {`Prefer email? Reach out directly: `}
+        <a href="mailto:cming.xu@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+          cming.xu@gmail.com
         </a>
         {`.`}
       </p>

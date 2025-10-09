@@ -63,7 +63,7 @@ import { Squares } from "@/components/effects/Squares"
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="h-12 px-8 text-lg font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl shadow-blue-300/30 ring-2 ring-blue-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-blue-400/40 transform hover:scale-[1.02]">
-                  <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer"><Rocket className="w-5 h-5" /> Start building</Link>
+                  <Link href="mailto:cming.xu@gmail.com" target="_blank" rel="noopener noreferrer"><Rocket className="w-5 h-5" /> Start building</Link>
                 </Button>
 
               </div>
@@ -208,14 +208,14 @@ import { Squares } from "@/components/effects/Squares"
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="h-12 px-8 text-lg font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl shadow-blue-300/30 ring-2 ring-blue-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-blue-400/40 transform hover:scale-[1.02]">
-                  <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer"><Rocket className="w-5 h-5" /> Start building</Link>
+                  <Link href="mailto:cming.xu@gmail.com" target="_blank" rel="noopener noreferrer"><Rocket className="w-5 h-5" /> Start building</Link>
                 </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white/10 text-base font-medium px-8 bg-transparent"
+              className="border-white text-white hover:bg-white/10 text_base font-medium px-8 bg-transparent"
             >
-              <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer">Talk to sales</Link>
+              <Link href="mailto:cming.xu@gmail.com" target="_blank" rel="noopener noreferrer">Talk to sales</Link>
             </Button>
           </div>
         </div>

@@ -127,9 +127,9 @@ export default function CareersPage() {
       <p>
         {`Say hello via the `}
         <Link href="/" className="font-semibold hover:underline">homepage</Link>
-        {` or on Telegram: `}
-        <a href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-          @victoleon1979
+        {` or via email: `}
+        <a href="mailto:cming.xu@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+          cming.xu@gmail.com
         </a>
         {`.`}
       </p>

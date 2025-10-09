@@ -60,10 +60,10 @@ export function Header() {
           </div>
           <div className="flex items-center gap-4">
             <Button asChild variant="ghost" className="text-sm font-medium">
-              <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer">Log in</Link>
+              <Link href="mailto:cming.xu@gmail.com" target="_blank" rel="noopener noreferrer">Log in</Link>
             </Button>
             <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium">
-              <Link href="https://t.me/victoleon1979" target="_blank" rel="noopener noreferrer">Start building</Link>
+              <Link href="mailto:cming.xu@gmail.com" target="_blank" rel="noopener noreferrer">Start building</Link>
             </Button>
           </div>
         </div>
