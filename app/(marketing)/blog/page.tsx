@@ -24,6 +24,16 @@ export default function BlogIndex() {
       imageAlt: "Pavel Durov",
       readMinutes: 8,
     },
+    {
+      slug: "telegram-stars",
+      title: "Telegram Stars: History, Adoption, Use Cases, and Forecast",
+      description:
+        "A practical overview of Telegram Stars — how it works, real-world adoption across Mini Apps, success stories, and what to expect next.",
+      date: "2025-10-09",
+      image: "/telegram-stars.jpg",
+      imageAlt: "Telegram Stars",
+      readMinutes: 8,
+    },
   ]
 
   return (
