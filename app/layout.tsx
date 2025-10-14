@@ -43,9 +43,6 @@ export const metadata: Metadata = {
   creator: "Telegram Mini App Builder",
   publisher: "Telegram Mini App Builder",
   category: "Business",
-  alternates: {
-    canonical: "/",
-  },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -53,7 +50,6 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "/",
     title: "Telegram Mini App Builder – Drag & Drop No‑Code",
     description:
       "Create Telegram Mini Apps without coding. AI‑powered builder with visual drag‑and‑drop and one‑click Shopify import — generate production‑ready mini apps for small businesses, content creators, and Shopify sellers.",
