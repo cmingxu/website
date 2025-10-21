@@ -34,6 +34,15 @@ export default function BlogIndex() {
       imageAlt: "Telegram Stars",
       readMinutes: 8,
     },
+    {
+      slug: "korean-local-spa-teletem-mini-app",
+      title: "Grow Exposure & Fill Bookings: Telegram Mini App for Local Spa",
+      description: "How broadcasts and one‑tap reservations attracted buyers to a Korean local spa.",
+      date: "2025-10-21",
+      image: "/spa.jpg",
+      imageAlt: "Korean Local Spa",
+      readMinutes: 5,
+    },
   ]
 
   return (

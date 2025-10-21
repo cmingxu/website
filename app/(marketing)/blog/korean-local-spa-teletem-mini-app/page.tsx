@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -27,11 +25,11 @@ export const metadata: Metadata = {
 
 export default function BlogPost() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-
+    // Replace outer wrapper to use blog layout's <main>
+    <main className="container mx-auto px-4 py-16">
+      {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="max-w-5xl mx-auto">
           <div className="rounded-2xl overflow-hidden border border-border">
             <Image
               src="/spa.jpg"
@@ -45,7 +43,8 @@ export default function BlogPost() {
         </div>
       </section>
 
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+      {/* Content */}
+      <div className="max-w-3xl mx-auto pb-20 mt-10">
         <h1 className="text-4xl font-bold tracking-tight mb-6 text-balance">
           Grow Exposure. Fill Bookings. Sell Services—Inside Telegram.
         </h1>
@@ -100,9 +99,7 @@ export default function BlogPost() {
             <Link href="/">See how broadcasts convert</Link>
           </Button>
         </div>
-      </main>
-
-      <Footer />
-    </div>
+      </div>
+    </main>
   );
 }
